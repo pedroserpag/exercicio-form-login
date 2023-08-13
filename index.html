@@ -13,17 +13,19 @@
 
   <body>
     <div class="wrapper">
-      <form action="">
+      <form id="form" action="">
         <p>Have an account?</p>
         <h1>Login</h1>
         <div class="input-box">
           <ion-icon name="person-outline"></ion-icon>
-          <input type="text" placeholder="Username" required />
+          <input id="Username" type="text" placeholder="Username" />
+          <p></p>
         </div>
 
         <div class="input-box">
           <ion-icon name="lock-closed-outline"></ion-icon>
-          <input type="password" placeholder="Password" required />
+          <input id="password" type="password" placeholder="Password" />
+          <p></p>
         </div>
 
         <button type="submit">Login</button>
@@ -39,5 +41,6 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>

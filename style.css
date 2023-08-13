@@ -98,3 +98,10 @@ body {
 .forgot-remember a:hover {
   text-decoration: underline;
 }
+.input-box.error input {
+  border: 1px solid red;
+}
+.input-box.error p {
+  color: red;
+  visibility: visible;
+}
