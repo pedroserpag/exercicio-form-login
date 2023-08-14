@@ -103,5 +103,4 @@ body {
 }
 .input-box.error p {
   color: red;
-  visibility: visible;
 }
