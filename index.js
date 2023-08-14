@@ -3,7 +3,7 @@ const username = document.getElementById("username");
 const password = document.getElementById("password");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault;
+  event.preventDefault();
 
   CheckUsername();
 });
