@@ -103,4 +103,5 @@ body {
 }
 .input-box.error p {
   color: red;
+  text-align: left;
 }

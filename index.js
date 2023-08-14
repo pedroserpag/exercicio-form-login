@@ -6,6 +6,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   CheckUsername();
+  CheckPassword();
 });
 
 function errorInput(input, messege) {
@@ -13,7 +14,7 @@ function errorInput(input, messege) {
   const textMessege = formItem.querySelector("p");
 
   textMessege.innerText = messege;
-  formItem.classname = "input-box error";
+  formItem.className = "input-box error";
 }
 
 function CheckUsername() {
@@ -22,6 +23,16 @@ function CheckUsername() {
     errorInput(username, "Este campo é obrigatório");
   } else {
     const formItem = username.parentElement;
-    formItem.classname = "input-box";
+    formItem.className = "input-box";
+  }
+}
+
+function CheckPassword() {
+  const passwordValue = password.value;
+  if (passwordValue === "") {
+    errorInput(password, "Este campo é obrigatório");
+  } else {
+    const formItem = password.parentElement;
+    formItem.className = "input-box";
   }
 }
