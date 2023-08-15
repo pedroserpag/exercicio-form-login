@@ -23,6 +23,7 @@ function CheckInputUsername() {
   } else {
     const formItem = username.parentElement;
     formItem.className = "input-box";
+    formItem.querySelector("p").remove();
   }
 }
 
@@ -33,6 +34,7 @@ function CheckInputPassword() {
   } else {
     const formItem = password.parentElement;
     formItem.className = "input-box";
+    formItem.querySelector("p").remove();
   }
 }
 
